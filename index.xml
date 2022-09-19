@@ -87,7 +87,16 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
       <pubDate>Thu, 11 Aug 2022 10:24:26 +0800</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>教育背景 本科：武汉科技大学</description>
+      <description>教育背景 本科：武汉科技大学 项目介绍 啥时候 掌握技能 阿萨德</description>
+    </item>
+    
+    <item>
+      <title>Test blog</title>
+      <link>http://localhost:1313/blog/post3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/post3/</guid>
+      <description>HTML 概念 超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。 操作思想 标签类似为一个容器，可以将数据放入容器内。页</description>
     </item>
     
   </channel>
