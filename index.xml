@@ -6,13 +6,13 @@
     <description>Recent content on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 21:21:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 10:17:19 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>html语言</title>
-      <link>http://localhost:1313/blog/p3/</link>
-      <pubDate>Mon, 19 Sep 2022 21:21:31 +0800</pubDate>
+      <title>HTML语言</title>
+      <link>http://localhost:1313/blog/post3/</link>
+      <pubDate>Mon, 19 Sep 2022 10:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/p3/</guid>
+      <guid>http://localhost:1313/blog/post3/</guid>
       <description>HTML 概念 超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。 操作思想 标签类似为一个容器，可以将数据放入容器内。页</description>
     </item>
     
@@ -97,15 +97,6 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
       
       <guid>http://localhost:1313/about/</guid>
       <description>教育背景 本科：武汉科技大学 项目介绍 啥时候 掌握技能 阿萨德</description>
-    </item>
-    
-    <item>
-      <title>HTML语言</title>
-      <link>http://localhost:1313/blog/post3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blog/post3/</guid>
-      <description>HTML 概念 超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。 操作思想 标签类似为一个容器，可以将数据放入容器内。页</description>
     </item>
     
   </channel>
