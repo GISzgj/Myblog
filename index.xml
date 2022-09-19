@@ -6,7 +6,16 @@
     <description>Recent content on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Sep 2022 16:59:45 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 17:05:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git和GitHub的相关学习</title>
+      <link>http://localhost:1313/blog/post2/</link>
+      <pubDate>Sun, 18 Sep 2022 17:05:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/post2/</guid>
+      <description>Git和GitHub是什么？ Git Git是一个免费、开源的版本控制软件。版本管理是一种记录文件变化的方式，以便将来查询特定版本的文件内容。 GitHub Gi</description>
+    </item>
+    
     <item>
       <title>测试</title>
       <link>http://localhost:1313/life/note3/</link>
@@ -22,7 +31,7 @@
       <pubDate>Fri, 02 Sep 2022 10:22:14 +0800</pubDate>
       
       <guid>http://localhost:1313/life/note2/</guid>
-      <description></description>
+      <description>life lifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelifelife</description>
     </item>
     
     <item>
@@ -31,7 +40,7 @@
       <pubDate>Thu, 01 Sep 2022 10:21:27 +0800</pubDate>
       
       <guid>http://localhost:1313/life/note1/</guid>
-      <description>life</description>
+      <description>life lifelifelifelifelifelifelifelifelifelifelifelifelife lifelifelifelife lifelifelife lifelifelife lifelifelife lifelife</description>
     </item>
     
     <item>
@@ -64,12 +73,12 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
     </item>
     
     <item>
-      <title>About</title>
+      <title>我的简历</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 11 Aug 2022 10:24:26 +0800</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>Github: jyygithub</description>
+      <description>教育背景 本科：武汉科技大学</description>
     </item>
     
   </channel>
