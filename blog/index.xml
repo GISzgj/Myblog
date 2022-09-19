@@ -6,7 +6,16 @@
     <description>Recent content in My Blog on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Sep 2022 17:05:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 21:21:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html语言</title>
+      <link>http://localhost:1313/blog/p3/</link>
+      <pubDate>Mon, 19 Sep 2022 21:21:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/p3/</guid>
+      <description>HTML 概念 超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。 操作思想 标签类似为一个容器，可以将数据放入容器内。页</description>
+    </item>
+    
     <item>
       <title>Git和GitHub的相关学习</title>
       <link>http://localhost:1313/blog/post2/</link>
@@ -28,7 +37,7 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
     </item>
     
     <item>
-      <title>Test blog</title>
+      <title>HTML语言</title>
       <link>http://localhost:1313/blog/post3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

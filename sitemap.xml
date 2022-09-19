@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/life/extracts/</loc>
-    <lastmod>2022-09-19T10:12:51+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2022-09-19T21:21:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/p3/</loc>
+    <lastmod>2022-09-19T21:21:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2022-09-19T21:21:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/life/extracts/</loc>
     <lastmod>2022-09-19T10:12:51+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/life/</loc>
     <lastmod>2022-09-19T10:12:51+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post2/</loc>
-    <lastmod>2022-09-18T17:05:11+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2022-09-18T17:05:11+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/life/note3/</loc>
@@ -43,8 +46,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
     <loc>http://localhost:1313/blog/post3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
