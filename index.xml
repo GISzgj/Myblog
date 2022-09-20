@@ -6,7 +6,16 @@
     <description>Recent content on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 12:13:57 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 16:13:57 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readme</title>
+      <link>http://localhost:1313/blog/readme/</link>
+      <pubDate>Tue, 20 Sep 2022 16:13:57 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/readme/</guid>
+      <description>望周知 因为是以Github为图床。cdn加速服务不够稳定，因此有时不能显示图片。当然如果使用加v速p服n务，能够正常显示。 造成不便，请见谅！</description>
+    </item>
+    
     <item>
       <title>基于基于ArcGis的地图发布-1</title>
       <link>http://localhost:1313/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83-%E5%89%AF%E6%9C%AC/</link>
@@ -133,6 +142,15 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
       
       <guid>http://localhost:1313/about/</guid>
       <description>教育背景 本科：武汉科技大学 项目介绍 待完善 掌握技能 待完善</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/23/</guid>
+      <description></description>
     </item>
     
   </channel>
