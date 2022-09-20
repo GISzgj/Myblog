@@ -101,15 +101,15 @@
 <ol>
 <li>
 <p><strong>动态地图服务（Web Map Service）</strong></p>
-<p>​ WMS服务——动态地图服务，在ArcGIS中我们经常利用已有的mxd文件发布的服务，就是这种地图服务，如果你的数据会变化，建议发这种服务。这种服务优点是动态，缺点是慢</p>
+<p>WMS服务——动态地图服务，在ArcGIS中我们经常利用已有的mxd文件发布的服务，就是这种地图服务，如果你的数据会变化，建议发这种服务。这种服务优点是动态，缺点是慢</p>
 </li>
 <li>
 <p><strong>web地图切片服务（Web Map Tile Service）</strong></p>
-<p>​  WMTS服务——web地图切片服务。相比WMS，牺牲了提供定制地图的灵活性，代之以通过提供静态数据（基础地图）来增强伸缩性，这些静态数据的范围框和比例尺被限定在各个图块内。</p>
+<p>WMTS服务——web地图切片服务。相比WMS，牺牲了提供定制地图的灵活性，代之以通过提供静态数据（基础地图）来增强伸缩性，这些静态数据的范围框和比例尺被限定在各个图块内。</p>
 </li>
 <li>
 <p><strong>web 要素服务（Web Feature Service）</strong></p>
-<p>​  WFS服务——web 要素服务。支持要素的增删改等事务操作，支持空间和属性查询</p>
+<p>WFS服务——web 要素服务。支持要素的增删改等事务操作，支持空间和属性查询</p>
 </li>
 </ol>
 </li>
@@ -138,7 +138,7 @@
 <ul>
 <li>
 <p>编译器选择为Hbuilder-X</p>
-<p>​不选用VS的原因是——Hbuider-X，之前做前端的时候已经下载过，且界面简洁，更易操作，vscode当时并未安装，需要重新安装。</p>
+<p>不选用VS的原因是——Hbuider-X，之前做前端的时候已经下载过，且界面简洁，更易操作，vscode当时并未安装，需要重新安装。</p>
 </li>
 </ul>
 </li>
@@ -147,22 +147,22 @@
 <ul>
 <li>
 <p>数据库安装SQL server-2008</p>
-<p>​  按照实验流程一步步安装。</p>
+<p>按照实验流程一步步安装。</p>
 </li>
 </ul>
 </li>
 <li>
 <h4 id="部署环境">部署环境</h4>
-<p>​  在windows系统，我们总是将ArcGIS API For JavaScript部署在IIS中。除此之外我们还能将其部署在Tomcat中。</p>
-<p>​  将ArcGIS API For JavaScript 3.14 版本的api部署在IIS中的步骤如下:</p>
+<p>在windows系统，我们总是将ArcGIS API For JavaScript部署在IIS中。除此之外我们还能将其部署在Tomcat中。</p>
+<p>将ArcGIS API For JavaScript 3.14 版本的api部署在IIS中的步骤如下:</p>
 <ol>
 <li>
 <p>下载要部署的库</p>
-<p>​ 下载所需部署的ArcGIS API For JavaScript 3.14 版本的api和SDK。(去官网下载——要注册账号)</p>
+<p>下载所需部署的ArcGIS API For JavaScript 3.14 版本的api和SDK。(去官网下载——要注册账号)</p>
 </li>
 <li>
 <p>安装IIS软件并进行配置</p>
-<p>​ windows系统自带了IIS,所以我们不需要另外去下载，打开windows控制面板，点击<strong>程序-&gt;打开或关闭windows功能</strong>，然后找到<strong>Internet信息服务</strong>，进行勾选，如下图所示： <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc19.png" alt="IIS安装"></p>
+<p>windows系统自带了IIS,所以我们不需要另外去下载，打开windows控制面板，点击<strong>程序-&gt;打开或关闭windows功能</strong>，然后找到<strong>Internet信息服务</strong>，进行勾选，如下图所示： <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc19.png" alt="IIS安装"></p>
 </li>
 <li>
 <p>修改相应的js文件（2个文件）</p>
@@ -173,16 +173,15 @@
 </li>
 <li>
 <p>将修改好的函数库复制到指定位置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc20.png" alt="部署位置"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc20.png" alt="部署位置"></p>
 </li>
 <li>
 <p>测试ArcGIS API For JavaScript函数库是否部署成功</p>
-<p><a href="http://localhost/arcgis_js_api/library/3.14/3.14/init.js">http://localhost/arcgis_js_api/library/3.14/3.14/init.js</a> <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc3.png" alt="测试部署成功否"></p>
+<p><a href="http://localhost/arcgis_js_api/library/3.14/3.14/init.js">http://localhost/arcgis_js_api/library/3.14/3.14/init.js</a> <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc3.png" alt="测试部署成功否"></p>
 <p><a href="http://localhost/arcgis_js_v314_sdk/arcgis_js_api/sdk/">http://localhost/arcgis_js_v314_sdk/arcgis_js_api/sdk/</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc1.png" alt="sdk测试"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc1.png" alt="sdk测试"></p>
 </li>
 </ol>
-<p>​</p>
 </li>
 </ol>
 <hr>
@@ -190,75 +189,62 @@
 <ol>
 <li>
 <h4 id="关于地图服务">关于地图服务</h4>
-<p>​  地图服务是一种利用 Arc GIS 使地图可通过 Web 进行访问的方法。我们首先在 Arc Map 中制作地图，然后将地图作为服务发布到 ArcGIS Server 站点上。此次实验发布以下地图服务：</p>
+<p>地图服务是一种利用 Arc GIS 使地图可通过 Web 进行访问的方法。我们首先在 Arc Map 中制作地图，然后将地图作为服务发布到 ArcGIS Server 站点上。此次实验发布以下地图服务：</p>
 <ol>
 <li>
 <p><strong>动态地图服务（Web Map Service）</strong></p>
-<p>​ WMS服务——动态地图服务，在ArcGIS中我们经常利用已有的mxd文件发布的服务，就是这种地图服务，如果你的数据会变化，建议发这种服务。这种服务优点是动态，缺点是慢</p>
+<p>WMS服务——动态地图服务，在ArcGIS中我们经常利用已有的mxd文件发布的服务，就是这种地图服务，如果你的数据会变化，建议发这种服务。这种服务优点是动态，缺点是慢</p>
 </li>
 <li>
 <p><strong>web地图切片服务（Web Map Tile Service）</strong></p>
-<p>​ WMTS服务——web地图切片服务。相比WMS，牺牲了提供定制地图的灵活性，代之以通过提供静态数据（基础地图）来增强伸缩性，这些静态数据的范围框和比例尺被限定在各个图块内。</p>
+<p>WMTS服务——web地图切片服务。相比WMS，牺牲了提供定制地图的灵活性，代之以通过提供静态数据（基础地图）来增强伸缩性，这些静态数据的范围框和比例尺被限定在各个图块内。</p>
 </li>
 <li>
 <p><strong>web 要素服务（Web Feature Service）</strong></p>
-<p>​ WFS服务——web 要素服务。支持要素的增删改等事务操作，支持空间和属性查询</p>
+<p>WFS服务——web 要素服务。支持要素的增删改等事务操作，支持空间和属性查询</p>
 </li>
 </ol>
 </li>
 <li>
 <h4 id="发布动态地图服务">发布动态地图服务</h4>
-<p>​  利用ArcMap发布自己的服务，发布的地图服务可以通过，ArcCatalog 来进行管理主要分为以下几步：</p>
+<p>利用ArcMap发布自己的服务，发布的地图服务可以通过，ArcCatalog 来进行管理主要分为以下几步：</p>
 <ol>
 <li>
 <p>用ArcMap打开我们想要发布为服务的数据</p>
 <p>打开ArcMap将数据导入。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc21.png" alt="动态地图导入"></p>
-<p>​</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc21.png" alt="动态地图导入"></p>
 </li>
 <li>
 <p>符号化我们的数据</p>
 <p>可以更改地图显示的颜色</p>
-<p>​</p>
 </li>
 <li>
 <p>利用ArcMap连接ArcGIS Server发布服务</p>
-<p>​</p>
 <p>点击<strong>文件</strong>-&gt;<strong>共享于</strong>-&gt;<strong>服务</strong> 打开<strong>共享为服务</strong>面板，点击<strong>发布服务</strong></p>
 <p>按照流程一步一步走，用户密码是之前<strong>登录ArcGIS Server服务器的帐号密码</strong></p>
-<p>​</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc22.png" alt="发布动态1"></p>
-<p>​</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc2.png" alt="发布动态"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc22.png" alt="发布动态1"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc2.png" alt="发布动态"></p>
 </li>
 <li>
 <p>查看地图服务</p>
-<p>​</p>
-<p>​</p>
 <ul>
 <li>
 <p>打开并登录服务管理器</p>
 <p>（<a href="http://localhost:6080/arcgis/manager/">http://localhost:6080/arcgis/manager/</a>）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc23.png" alt="manager"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc23.png" alt="manager"></p>
 </li>
-</ul>
-<p>​</p>
-<ul>
 <li>
 <p>点击Test文件夹可以查看我们刚刚发布的地图服务</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc4.png" alt="test目录"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc4.png" alt="test目录"></p>
 <p>红框是发布的动态地图服务。</p>
 </li>
-</ul>
-<p>​</p>
-<ul>
 <li>
 <p>点击进入该服务，可以查看该服务支持的具体操作</p>
-<p>​              <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc5.png" alt="test目录2"></p>
+<p>​              <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc5.png" alt="test目录2"></p>
 </li>
 <li>
 <p>查看地图</p>
-<p>​     <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc6.png" alt="查看动态地图"></p>
+<p>​     <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc6.png" alt="查看动态地图"></p>
 </li>
 </ul>
 </li>
@@ -269,7 +255,7 @@
 <ol>
 <li>
 <p>用ArcMap打开我们想要发布为服务的数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc202209200923569.png" alt="切片地图"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc202209200923569.png" alt="切片地图"></p>
 </li>
 <li>
 <p>符号化我们的数据</p>
@@ -282,17 +268,14 @@
 </li>
 <li>
 <p>修改地图服务属性（修改为切片地图服务）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/atc7.png" alt="切片地图2"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/atc7.png" alt="切片地图2"></p>
 </li>
-</ol>
-<p>​</p>
-<ol>
 <li>
 <p>发布服务到ArcGIS Server</p>
 </li>
 <li>
 <p>查看发布的地图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc8.png" alt="切片地图3"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc8.png" alt="切片地图3"></p>
 </li>
 </ol>
 </li>
@@ -303,34 +286,28 @@
 <li>
 <p>准备一个 关系数据库</p>
 <p>通过SQL建立一个数据库mydb——SQL Server 2008 的数据库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc10.png" alt="要素地图1"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc10.png" alt="要素地图1"></p>
 </li>
 <li>
 <p>将mydb升级为地理数据库</p>
-<p>​</p>
 <p>打开ArcCatalog，右击localhost. sde-&gt;启用地理数据库。</p>
 <p>注意licence授权。</p>
 <p>因为已经做过，没有截图。</p>
-<p>​</p>
 </li>
 <li>
 <p>将数据存储到SDE数据库中，并设置数据的属性</p>
-<p>​</p>
 <ul>
 <li>
 <p><strong>右键localhost.sde</strong>-&gt;<strong>导入</strong>-&gt;<strong>要素类（多个）</strong></p>
 </li>
 <li>
 <p>导入三个要素类（<strong>luokuoxian</strong>，<strong>huatan</strong>，<strong>宿舍楼</strong>）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc11.png" alt="要素地图2"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc11.png" alt="要素地图2"></p>
 </li>
-</ul>
-<p>​</p>
-<ul>
 <li>
 <p>给要发布的要素注册版本</p>
 <p><strong>右击</strong>要发布的要素类-&gt;<strong>管理</strong>-&gt;<strong>注册版本</strong></p>
-<p><strong><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc12.png" alt="要素地图3"></strong></p>
+<p><strong><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc12.png" alt="要素地图3"></strong></p>
 </li>
 </ul>
 </li>
@@ -346,10 +323,10 @@
 </li>
 <li>
 <p>注册数据库到ArcGIS Server</p>
-<p>​     <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/202209200917776.png" alt="要素地图4"></p>
+<p>​     <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/202209200917776.png" alt="要素地图4"></p>
 <p>​      点击分析，出现错误：点击错误注册地里数据库。</p>
 <p>​      注册</p>
-<p>​      <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc26.png" alt="要素地图5"></p>
+<p>​      <img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc26.png" alt="要素地图5"></p>
 <ol>
 <li>点击确定重新分析，然后发布</li>
 </ol>
@@ -359,30 +336,28 @@
 <li>
 <p>查看服务</p>
 <p>打开网址<a href="http://localhost:6080/arcgis/manager/;%E8%BF%9B%E5%8E%BBtest">http://localhost:6080/arcgis/manager/;进去test</a>页面</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc27.png" alt="要素地图6"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc27.png" alt="要素地图6"></p>
 <p>选择ft，查看要素地图及相关功能</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc25.png" alt="要素地图7"></p>
-<p>​</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc25.png" alt="要素地图7"></p>
 </li>
 </ol>
 </li>
 </ol>
-<p>​</p>
 <hr>
 <h3 id="实验三发布地图">实验三：发布地图</h3>
 <ol>
 <li>
 <h4 id="按照此次实验的代码有一处错误">按照此次实验的代码有一处错误</h4>
-<p>​  因为源代码，调用的api位置与本机位置不同，所以运行的时候无法调用api，因此需要将调用的位置更改到本机上。</p>
-<p>​  api位置为部署时所放置的位置。</p>
-<p>​  此次地图发布主要基于ArcGIS API For JavaScript 3.14。</p>
-<p>​  红框框部分需要将注释的代码更改为剩下的3行。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc13.png" alt="最终成果2"></p>
+<p>因为源代码，调用的api位置与本机位置不同，所以运行的时候无法调用api，因此需要将调用的位置更改到本机上。</p>
+<p>api位置为部署时所放置的位置。</p>
+<p>此次地图发布主要基于ArcGIS API For JavaScript 3.14。</p>
+<p>红框框部分需要将注释的代码更改为剩下的3行。</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc13.png" alt="最终成果2"></p>
 </li>
 <li>
 <h4 id="修改地图服务的位置">修改地图服务的位置</h4>
-<p>​  需要在发布的地图服务功能中找到url。将代码改为如下的形式</p>
-<p>​  <img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc15.png" alt="最终成果3"></p>
+<p>需要在发布的地图服务功能中找到url。将代码改为如下的形式</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc15.png" alt="最终成果3"></p>
 </li>
 <li>
 <h4 id="调用动态地图服务">调用动态地图服务</h4>
@@ -390,9 +365,9 @@
 <ul>
 <li>
 <p>通过地图服务的URL创建一个<code>ArcGISDynamicMapServiceLayer</code>对象</p>
-<p>​  在ArcGIS <a href="https://so.csdn.net/so/search?q=API&amp;spm=1001.2101.3001.7020">API</a> 中给我们提供了一个类叫做</p>
-<p>​  &quot; ArcGISDynamicMapServiceLayer &quot;</p>
-<p>​ 利用这个类，我们可以获得发布的地图服务。</p>
+<p>在ArcGIS <a href="https://so.csdn.net/so/search?q=API&amp;spm=1001.2101.3001.7020">API</a> 中给我们提供了一个类叫做</p>
+<p>&quot; ArcGISDynamicMapServiceLayer &quot;</p>
+<p>利用这个类，我们可以获得发布的地图服务。</p>
 </li>
 <li>
 <p>将动态地图服务的对象添加到地图容器中</p>
@@ -402,19 +377,19 @@
 <li>
 <h4 id="调用切片地图服务">调用切片地图服务</h4>
 <p>​     重点lods ，这个是相对瓦片地图服务来说的，用来设置显示瓦片地图服务的级别，这个lods获取来源你发布的切片地图服务，不同的切片比例，这里填写的信息 是不一样的，这个很关键，填错了，底图无法显示。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc16.png" alt="最终成果5"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc17.png" alt="最终成功4"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc16.png" alt="最终成果5"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc17.png" alt="最终成功4"></p>
 </li>
 <li>
 <h4 id="最终效果图">最终效果图</h4>
 <ul>
 <li>
 <p>切片地图展示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc24.png" alt="最终成果6"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc24.png" alt="最终成果6"></p>
 </li>
 <li>
 <p>动态地图展示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/arc18.png" alt="最终成果7"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/arc18.png" alt="最终成果7"></p>
 </li>
 </ul>
 </li>
@@ -433,7 +408,7 @@
 </li>
 <li>
 <p>明白了发布地图的大致流程</p>
-<p>​   地图（ArcMap）&ndash;数据库+SDK升级为空间数据库&ndash;发布到ArcGis server&ndash;Hbuilder-X编译代码利用ArcGIS API For JavaScript 3.14发布地图。</p>
+<p>地图（ArcMap）&ndash;数据库+SDK升级为空间数据库&ndash;发布到ArcGis server&ndash;Hbuilder-X编译代码利用ArcGIS API For JavaScript 3.14发布地图。</p>
 </li>
 </ul>
 
@@ -446,8 +421,8 @@
     </button>
     
     
-    <button onclick="window.location.href = '\/blog\/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83-%E5%89%AF%E6%9C%AC\/'">
-        <span style="color: var(--primary-color);">下一篇</span><br />基于基于ArcGis的地图发布-1
+    <button onclick="window.location.href = '\/blog\/readme\/'">
+        <span style="color: var(--primary-color);">下一篇</span><br />Readme
     </button>
     
 </div>

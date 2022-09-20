@@ -161,31 +161,31 @@
 <p>备注：爬取的结果数目大于研究区域的数目，需要在QGIS里用空间信息查询，将研究区域以外的点删除。</p>
 <p>也可以使用八爪鱼软件来爬取数据（等时圈同样也可以使用。）</p>
 <p>图表 0.1爬取coffee信息</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis1.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis1.png" alt="img"></p>
 <p>通过excel将爬取的信息进行处理，关键是将location的信息转化出X,Y输出coffee的位置信息。使用的excel函数为mid（）和right（）对location进行处理添加X、Y两列。结果共有551条数据。</p>
 <p>处理的部分结果如下：</p>
 <p>图表 0.2信息处理结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis2.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis2.png" alt="img"></p>
 <p>图表 0.3部分结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis3.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis3.png" alt="img"></p>
 <h3 id="2-导入数据">2. 导入数据</h3>
 <p>导入数据时要使用.csv格式。先将excel处理后的数据转化为txt格式，再把txt中的空格全部转化为“，”然后将数据转化为csv格式，编码设置为utf-8。</p>
 <p>在QGIS中，点击图层，添加图层，添加分隔文本图层。导入csv文件将X,Y作为点的位置输出。</p>
 <p>利用空间信息查询将不在研究范围的点全部删除，操作是在工具栏中选择按位置选择，将点数据放入第一个图层，将研究面图层放入第二个，选择不不相交于，将选中的点全部删除。最后只留下研究区内的coffee点。</p>
 <p>然后进行重投影，点击矢量 、数据管理工具、重投影图层。将图层的地理坐标系统设置为2385-Xian 1980。（之后的每一个图层都需要重投影将其转换到同一个坐标系统之下。）</p>
 <p>图表 0.4导入数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis4.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis4.png" alt="img"></p>
 <p>图表 0.5重投影</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis5.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis5.png" alt="img"></p>
 <p>图表 0.6导入结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis6.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis6.png" alt="img"></p>
 <h3 id="3-要素转换">3. 要素转换</h3>
 <p>导入boundary（现状行政边界数据）数据将其转换为面状要素并命名为stb_boundary，以便后续用于空间分析和计算。</p>
 <p>在工具箱搜索多边形化，使用多边形化工具将boundary线要素转化为面要素。</p>
 <p>正常来说也要使用同样的方法将city_town从线状数据转换为面状数据。</p>
 <p>但是因为课设给的数据中city_down直接是面状工具，因此，不需要将在使用上述过程来转换要素类型。</p>
 <p>图表 0.7转化要素</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis7.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis7.png" alt="img"></p>
 <h3 id="4-创建缓冲区">4. 创建缓冲区</h3>
 <p><strong>（1）</strong>  <strong>建立等距缓冲区和等时缓冲区。</strong></p>
 <p>等距缓冲区使用缓冲区工具，在设置中将距离设置为100米，输入图层选择coffee点数据。</p>
@@ -193,27 +193,27 @@
 <p>缓冲区创建时可以创建单独的缓冲区，也要把融合的缓冲区建立出来，方便后期的面积计算。</p>
 <p>如果创建缓冲区时只创建了单独缓冲区，可以从工具栏中搜索融合工具，输入图层设为单独缓冲区，然后输出，将所有字段融为一体，最后只剩下一个字段，也是融合缓冲区。</p>
 <p>图表 0.8等时区的获取</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis8.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis8.png" alt="img"></p>
 <p>图表 0.9缓冲区的建立</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis9.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis9.png" alt="img"></p>
 <p><strong>（2）</strong>  <strong>使用clip裁剪工具。</strong></p>
 <p>在工具栏中直接搜索clip，打开clip工具。输入图层为融合缓冲区，叠加图层为stb_boundary。</p>
 <p>靠近边界部分的缓冲区超出了边界线的范围，利用clip裁剪工具将超出的部分删除。只留下在缓冲区里的部分，便于研究。</p>
 <p>图表 0.10裁剪后</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis10.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis10.png" alt="img"></p>
 <p><strong>（3）</strong>  <strong>计算缓冲区面积。</strong></p>
 <p>计算缓冲区的面积，在缓冲区分析结果图层中添加area面积字段，将字段名称设置为“area”，类型设置为小数（实型）“Decimal number（real）”，精度（precision）设置为3 .（备注：因为我的QGIS无法设置精度，因此精度为最高的，最后再进行换算）</p>
 <p>在Expression右侧的Geometry空间计算公式列表中选择面积计算函数$area,</p>
 <p>手动输入“$area/1000000”，将基于投影坐标系计算的多边形面积的默认单位“平方米”，转换为“平方千米”。</p>
 <p>图表 0.11缓冲区面积</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis11.png" alt="img">（没有设置精度)</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis11.png" alt="img">（没有设置精度)</p>
 <h3 id="5--创建泰森多边形">5.  创建泰森多边形</h3>
 <p>加载 boundary 文件，将其转化为面图层，确定研究区位与边界，方便后期裁剪泰森多边形。</p>
 <p>在工具框里搜索泰森多边形工具，打开并设置以下参数并执行：输入图层选择coffee馆的点数据“coffee”，缓冲工具（占范围百分比）设定为“25”，以便覆盖整个研究区。</p>
 <p>结果生成 Voronoi_polygons（泰森多边形） 图层，将该图层移动到coffee图层之下。</p>
 <p>利用研究区边界图层，使用裁剪clip工具裁剪泰森多边形分析结果中超出研究区范围的部分，只留下研究区域内的部分。裁剪后的数据存储为“coffee_voronoi”。</p>
 <p>图表 0.12泰森多边形结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis12.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis12.png" alt="img"></p>
 <p>思路：基于人口栅格数据的商圈人口估算</p>
 <p>以下步骤的整体思路是：</p>
 <p>（1）利用 QGIS 的交叉计算工具，将邻近区域（缓冲区或泰森多边形区</p>
@@ -225,35 +225,35 @@
 <h3 id="6--对栅格人口及泰森多边形计算每个单元数据的面积">6.  对栅格人口及泰森多边形计算每个单元数据的面积</h3>
 <p>在 Jingan_pop2015 栅格数据属性表内打开字段计算器，添加一个新字段，字段字段名称设置为area，将字段设置为小数（实型），精度不进行设置（同上）在表达式的搜索框里搜索选择面积计算函数$area,如果除以1000000结果太小，基本为零，因此不进行设置。</p>
 <p>图表 0.13人口面积</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis13.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis13.png" alt="img"></p>
 <h3 id="7--栅格人口数据与泰森多边形数据的交叉计算">7.  栅格人口数据与泰森多边形数据的交叉计算</h3>
 <p>（1）相交人口数据与泰森多边形</p>
 <p>矢量→地理处理工具→相交。计算人口数据和泰森多边形的相交部分</p>
 <p>（输入图层）为栅格人口数据 。</p>
 <p>（叠加图层）为泰森多边形数据。计算并输出成文件，设置文件名为“store_voronoi_pop_intersection”。</p>
 <p>图表 0.14相交图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis202209201108913.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis202209201108913.png" alt="img"></p>
 <p>（2）计算每一个交叉部分的面积</p>
 <p>打开store_voronoi_pop_intersection图层的属性表，选择打开字段计算器，输出字段设置为“area_v”，类型设置为小数（实型）精度默认。在函数的搜索框里搜索并使用$area.计算每一个交叉部分的面积。</p>
 <p>图表 0.15交叉部分的面积</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis16.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis16.png" alt="img"></p>
 <h3 id="8--交叉区域的人口估算">8.  交叉区域的人口估算</h3>
 <p>再次打开store_voronoi_pop_intersection图层的属性表。在属性表里打开字段计算器，计算交叉区域人口数量。</p>
 <p>输出字段名字设置为“pop_int”</p>
 <p>输出字段类型设置为为“小数（实型）”输出字段长度与精度，因为我的QGIS无法设置数值，因此全都使用默认值。</p>
 <p>表达式设置为“area_v * pop / area”。计算交叉区域的人口估计数量。</p>
 <p>图表 0.16交叉区域的人口估算</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis17.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis17.png" alt="img"></p>
 <h3 id="9--泰森多边形商圈的人口估算">9.  泰森多边形商圈的人口估算</h3>
 <p>（1） 输出图层，csv格式</p>
 <p>右键store_voronoi_pop_intersection图层，选择导出，要素另存为，选择格式为csv格式，将文件命名为tb_voronoi_pop.csv然后输出。</p>
 <p>图表 0.17输出csv</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis18.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis18.png" alt="img"></p>
 <p>（2） 数据处理，计算人口</p>
 <p>在excel打开输出的csv文件，转换为xlsx文件，使用分类汇总的功能，以名字字段为分类的依据，将每个名字字段下的pop_int汇总在一起输出成新字段‘人口总和’。</p>
 <p>然后将excel表转存为csv格式，并命名为tb_voronoi_pop.csv。</p>
 <p>图表 0.18人口总和</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis19.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis19.png" alt="img"></p>
 <p>（3） 连接属性表，绘制分布图</p>
 <p>在工具栏中搜索“按字段值连接属性”，打开工具</p>
 <p>输入图层1设置为：store_voronoi_pop_intersection</p>
@@ -262,43 +262,43 @@
 <p>然后输出名字设置为：“人口密度分布图”，完成属性表的链接。</p>
 <p>然后对“人口密度分布图”图层进行分层设色，双击打开属性，选择符号化，渐进，字段选择为：“人口总和”点击自然间断点。</p>
 <p>图表 0.19人口密度分布</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis20.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis20.png" alt="img"></p>
 <h3 id="10-商圈缓冲区内的公交站数的计算">10. 商圈缓冲区内的公交站数的计算</h3>
 <p>（1）叠置运算（相交）</p>
 <p>​       在工具栏中搜索相交，或者矢量→地理处理工具→相交。打开相交，将泰森多边形和融合缓冲区进行相交运算。输出图层名字为：“商圈缓冲区”</p>
 <p>图表 0.20商圈缓冲区</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis21.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis21.png" alt="img"></p>
 <p>（2）统计公交站个数</p>
 <p>在搜索框里搜索“统计点在多边形中的数量”或者矢量，分析工具，统计点在多边形中的数量。打开后输入两个图层分别是“bus_stop”和“商圈缓冲区”统计结果放入字段：“NUMPOINTS”。然后输出图层为：“公交站数”</p>
 <p>图表 0.21公交站数</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis22.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis22.png" alt="img"></p>
 <p>（3）分层设色</p>
 <p>​       双击“公交站数”图层打开属性，点击符号化，选择分类，值为：“NUMPOINTS”点击分类。分层设色结果图为：</p>
 <p>图表 0.22公交站分层设色</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis202209201111455.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis202209201111455.png" alt="img"></p>
 <h2 id="四成果展示">四．成果展示</h2>
 <h3 id="1独立等距缓冲区和融合等距缓冲区">1.独立等距缓冲区和融合等距缓冲区</h3>
 <p>根据研究区域裁剪后的独立等距缓冲区和融合等距缓冲区。</p>
 <p>独立等距缓冲区</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis23.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis23.png" alt="img"></p>
 <p>融合等距缓冲区</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis25.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis25.png" alt="img"></p>
 <h3 id="2等时圈分布">2.等时圈分布</h3>
 <p>只取了一个点的等时圈，等时圈的计算方式为：walking，时间为</p>
 <p>2min</p>
 <p>等时圈</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis24.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis24.png" alt="img"></p>
 <h3 id="3泰森多边形商圈的人口密度分布图">3.泰森多边形商圈的人口密度分布图</h3>
 <p>采用渐进的分层方法，一共将人口密度分成10层，从低到高层层颜色加深。人口密度越多，颜色越深的coffee馆，其周围人口较多，竞争力会比其它人口密度低的店铺大。</p>
 <p>人口密度分布图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis202209201111546.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis202209201111546.png" alt="img"></p>
 <h3 id="4商圈缓冲区的公交站数分布图">4.商圈缓冲区的公交站数分布图</h3>
 <p>浅粉色的公交站数量为：0</p>
 <p>稍深粉色的公交站数量为：1</p>
 <p>深红色的公交站数量为：2</p>
 <p>公交站数量越多的coffee馆的竞争力越大。</p>
 <p>公交站数分层设色</p>
-<p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/qgis26.png" alt="img"></p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/qgis26.png" alt="img"></p>
 <h2 id="五-不足与展望">五． 不足与展望</h2>
 <h3 id="1设计过程中碰到的问题及解决办法">1.设计过程中碰到的问题及解决办法</h3>
 <ul>
@@ -315,7 +315,7 @@
 <li>
 <p>（3）问题：坐标系的转换与统一问题。最开始转换坐标系的时候是通过属性里的源直接更改指定坐标参照系，会使得图层剧烈偏移无法对齐。</p>
 <p>​    解决：坐标系的转换要通过重投影来进行。在工具框里直接搜索重投影，或者在矢量、数据管理工具、重投影图层。
-打开后选择图层和目标坐标系。通过修改工程CRS为目标坐标系来使整个工程的坐标系统一。</p>
+​    打开后选择图层和目标坐标系。通过修改工程CRS为目标坐标系来使整个工程的坐标系统一。</p>
 </li>
 <li>
 <p>（4）问题：等时缓冲区的制作，完全不会。</p>
@@ -332,10 +332,10 @@
 </li>
 </ul>
 <h3 id="2本设计能够应用在哪些方面解决哪些问题">2.本设计能够应用在哪些方面、解决哪些问题</h3>
-<p>​   可以使用在新店铺选址上，选取交通便利，人口密度大的区域。</p>
-<p>​   可以应用于竞争力分析中，分析那些店铺资源位置好，竞争力强。</p>
+<p>可以使用在新店铺选址上，选取交通便利，人口密度大的区域。</p>
+<p>可以应用于竞争力分析中，分析那些店铺资源位置好，竞争力强。</p>
 <p>可以使用在项目前期策划报告的可行性研究中，用来分析市场情况。收集数据，并将数据展示出来。</p>
-<p>​   可以使用在市场开拓战略中。企业策略的制定或调整，要立足于商圈内环境因素的现状以及发展趋势。本次设计，可以帮助经营者制定适宜的市场开拓战略，不断延伸经营触角，扩大商圈范围，提高市场占有率。</p>
+<p>可以使用在市场开拓战略中。企业策略的制定或调整，要立足于商圈内环境因素的现状以及发展趋势。本次设计，可以帮助经营者制定适宜的市场开拓战略，不断延伸经营触角，扩大商圈范围，提高市场占有率。</p>
 <h3 id="3gis-在商圈分析中还有哪些应用">3.GIS 在商圈分析中还有哪些应用</h3>
 <p>(1)商业活动与地理单元及区域社会、经济、自然、人文等密切联系，而处理和分析地理数据信息GIS的具有强大的功能，应用GIS数据库中的资料及其有关功能，辅之以相应的市场及商业信息，可以方便地进行市场营销中所需要的各项空间分析工作。</p>
 <p>(2)GIS强大的空间分析与数据管理功能方便地实现商圈信息中的各项查询、检索工作，利用其可视化输出模块实现有关信息的多种形式的输出，以提供决策支持。</p>
