@@ -6,7 +6,16 @@
     <description>Recent content on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 10:17:19 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 09:25:16 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于基于ArcGis的地图发布</title>
+      <link>http://localhost:1313/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Tue, 20 Sep 2022 09:25:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</guid>
+      <description>一、实验目的 部署ArcGis环境 安装ArcGis desktop 10.2 安装ArcGis licence 10.2 安装ArcGis server 10.2 不需要安装SDK，10.2版本已经内置 发布地图服</description>
+    </item>
+    
     <item>
       <title>HTML语言</title>
       <link>http://localhost:1313/blog/post3/</link>
