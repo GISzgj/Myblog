@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Blog on GuanJun</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>http://zgjgis.top/blog/</link>
     <description>Recent content in My Blog on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 16:13:57 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 16:13:57 +0800</lastBuildDate><atom:link href="http://zgjgis.top/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Readme</title>
-      <link>http://localhost:1313/blog/readme/</link>
+      <link>http://zgjgis.top/blog/readme/</link>
       <pubDate>Tue, 20 Sep 2022 16:13:57 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/readme/</guid>
+      <guid>http://zgjgis.top/blog/readme/</guid>
       <description>望周知 因为是以Github为图床。cdn加速服务不够稳定，因此有时不能显示图片。当然如果使用加v速p服n务，能够正常显示。 造成不便，请见谅！</description>
     </item>
     
     <item>
       <title>基于基于ArcGis的地图发布</title>
-      <link>http://localhost:1313/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</link>
+      <link>http://zgjgis.top/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</link>
       <pubDate>Tue, 20 Sep 2022 11:13:57 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</guid>
+      <guid>http://zgjgis.top/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</guid>
       <description>一、实验目的 部署ArcGis环境 安装ArcGis desktop 10.2 安装ArcGis licence 10.2 安装ArcGis server 10.2 不需要安装SDK，10.2版本已经内置 发布地图服</description>
     </item>
     
     <item>
       <title>使用QGIS对静安区coffee进行商圈分析</title>
-      <link>http://localhost:1313/blog/%E4%BD%BF%E7%94%A8qgis%E5%AF%B9%E9%9D%99%E5%AE%89%E5%8C%BA%E8%BF%9B%E8%A1%8Ccoffee%E5%95%86%E5%9C%88%E5%88%86%E6%9E%90/</link>
+      <link>http://zgjgis.top/blog/%E4%BD%BF%E7%94%A8qgis%E5%AF%B9%E9%9D%99%E5%AE%89%E5%8C%BA%E8%BF%9B%E8%A1%8Ccoffee%E5%95%86%E5%9C%88%E5%88%86%E6%9E%90/</link>
       <pubDate>Tue, 20 Sep 2022 09:25:16 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/%E4%BD%BF%E7%94%A8qgis%E5%AF%B9%E9%9D%99%E5%AE%89%E5%8C%BA%E8%BF%9B%E8%A1%8Ccoffee%E5%95%86%E5%9C%88%E5%88%86%E6%9E%90/</guid>
+      <guid>http://zgjgis.top/blog/%E4%BD%BF%E7%94%A8qgis%E5%AF%B9%E9%9D%99%E5%AE%89%E5%8C%BA%E8%BF%9B%E8%A1%8Ccoffee%E5%95%86%E5%9C%88%E5%88%86%E6%9E%90/</guid>
       <description>一．绪论 主要目的是将上海市静安区的研究区域内的咖啡馆全部提取出来，在qgis中完成商圈可视化分析，以及商圈内的人口与公共设施（公交）的定量分</description>
     </item>
     
     <item>
       <title>HTML语言</title>
-      <link>http://localhost:1313/blog/html/</link>
+      <link>http://zgjgis.top/blog/html/</link>
       <pubDate>Mon, 19 Sep 2022 10:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/html/</guid>
+      <guid>http://zgjgis.top/blog/html/</guid>
       <description>HTML 概念 超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。 操作思想 标签类似为一个容器，可以将数据放入容器内。页</description>
     </item>
     
     <item>
       <title>Git和GitHub的相关学习</title>
-      <link>http://localhost:1313/blog/github%E5%92%8Cgit/</link>
+      <link>http://zgjgis.top/blog/github%E5%92%8Cgit/</link>
       <pubDate>Sun, 18 Sep 2022 17:05:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/github%E5%92%8Cgit/</guid>
+      <guid>http://zgjgis.top/blog/github%E5%92%8Cgit/</guid>
       <description>Git和GitHub是什么？ Git Git是一个免费、开源的版本控制软件。版本管理是一种记录文件变化的方式，以便将来查询特定版本的文件内容。 GitHub Gi</description>
     </item>
     
     <item>
       <title>绝对路径和相对路径</title>
-      <link>http://localhost:1313/blog/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
+      <link>http://zgjgis.top/blog/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Sun, 18 Sep 2022 16:06:21 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
+      <guid>http://zgjgis.top/blog/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid>
       <description>绝对路径 两种情况 盘符：例如D:\娱乐\图片\20191106032622981.jpg 图床——放到网络上的图片https://cdn.jsd</description>
     </item>
     
     <item>
       <title>Test blog</title>
-      <link>http://localhost:1313/blog/test/</link>
+      <link>http://zgjgis.top/blog/test/</link>
       <pubDate>Thu, 01 Sep 2022 10:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/test/</guid>
+      <guid>http://zgjgis.top/blog/test/</guid>
       <description>H2 H3 fsdf lsdjl jggj fjdggj lkrjerg iergrdg;serigjerogjoiergj oeri;jg er;oi greoigj er; gj;erog erjg oer ger;eorgj er
 Code html&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;Blockquote flkdsjfg wp gherog oreig dfngserg oie gdfgnreo ghreog ngkjfdsgeroghg jfdlgfd gfdogeroig fgnreog herognb,bnd;glaergh gnlds;gerter tgndflgnerghowtsd,gmnxbvbnkjdrgheroigbmndfljgnerog regdfgkndfl dfigj erg wgnfgdfnghwoatweggnsdflgjewpgjw epdgnflg egwejpg gnsdgnweoigfngjbdlkgosgpweotsngdfjgn wgjw eg
 H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math $$ c = \sqrt{a^{2}+b_{xy}^{2}+e^{x}} $$</description>

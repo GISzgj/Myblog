@@ -9,7 +9,7 @@
 
     <title>HTML语言</title>
 
-    <link rel="canonical" href="http://localhost:1313/">
+    <link rel="canonical" href="http://zgjgis.top/">
 
     
     <link rel='stylesheet' type='text/css' href='/css/common.min.2e0fcb1a7000d167fb8edc8795fd7fa375f12491a92c7e9c4e7cbaabf45d4c90.css'/>
@@ -183,7 +183,27 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h3 id="其他标签">其他标签</h3>
+</style><blockquote>
+<p>表单用于搜集不同类型的用户输入(用户输入的数据)，然后可以把用户数据提交到web服务器 。</p>
+</blockquote>
+<h3 id="表单标签">表单标签</h3>
+<ul>
+<li>表单标签是<code>&lt;form&gt;</code>标签，定义整体的表单区域</li>
+<li>常用的表单元素标签有: <code>&lt;label&gt;</code>、<code>&lt;input&gt;</code>、 <code>&lt;textarea&gt;</code>、<code>&lt;select&gt;</code> <code>&lt;label&gt;</code>等标签</li>
+</ul>
+<ol>
+<li><code>&lt;form&gt;</code>标签 表示表单标签，定义整体的表单区域</li>
+<li><code>&lt;label&gt;</code>标签 表示表单元素的文字标注标签，定义文字标注</li>
+<li><code>&lt;input&gt;</code>标签 表示表单元素的用户输入标签，定义不同类型的用户输入数据方式</li>
+<li><code>&lt;textarea&gt;</code>标签 表示表单元素的多行文本输入框标签 定义多行文本输入框</li>
+<li><code>&lt;select&gt;</code>标签 表示表单元素的下拉列表标签 定义下拉列表
+<ul>
+<li><code>&lt;option&gt;</code>标签 与<code>&lt;select&gt;</code>标签配合，定义下拉列表中的选项</li>
+</ul>
+</li>
+<li><code>&lt;label&gt;</code>标签 表示标签用于绑定一个表单元素，当点击<!-- raw HTML omitted -->标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，用来增加用户体验。</li>
+</ol>
+<h3 id="其他标签">其他标签</h3>
 <div class="highlight">
     <span class="highlight-type"></span>
     <pre><code class="language- hljs" data-lang="">&lt;form&gt;…&lt;/form&gt;        --定义供⽤户输⼊的 HTML 表单
@@ -205,7 +225,41 @@ span标签：一行可以放多个</code></pre>
 <h2 id="详解示例"><em>详解示例</em></h2>
 <h3 id="列表标签">列表标签</h3>
 <p>代码：</p>
-<!-- raw HTML omitted -->
+<div class="highlight">
+    <span class="highlight-type">文本</span>
+    <pre><code class="language-文本 hljs" data-lang="文本">    &lt;h1&gt;学生名称&lt;/h1&gt;
+    &lt;ul&gt;
+        &lt;li&gt;张三&lt;/li&gt;
+        &lt;li&gt;李四&lt;/li&gt;
+        &lt;li&gt;5&lt;/li&gt;
+        &lt;li&gt;6&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;hr&gt;
+    &lt;h1&gt;成绩&lt;/h1&gt;
+    &lt;ol&gt;
+        &lt;li&gt;a&lt;/li&gt;
+        &lt;li&gt;b&lt;/li&gt;
+        &lt;li&gt;c&lt;/li&gt;
+        &lt;li&gt;d&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;&lt;h1&gt;帮助中心&lt;/h1&gt;&lt;/dt&gt;
+        &lt;dd&gt;账户管理&lt;/dd&gt;
+        &lt;dd&gt;购物管理&lt;/dd&gt;
+        &lt;dd&gt;订单管理&lt;/dd&gt;
+    &lt;/dl&gt;</code></pre>
+</div>
+
+<style>
+    .highlight-type {
+        content: "文本";
+        position: absolute;
+        opacity: 0.5;
+    }
+</style><p>运行结果：</p>
+<ul>
+<li><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/202209202224781.png" alt="snipaste20220920_222418"></li>
+</ul>
 <h4 id="无序列表">无序列表</h4>
 <p>不区分顺序的列表</p>
 <ul>
@@ -307,11 +361,10 @@ span标签：一行可以放多个</code></pre>
 </ul>
 </li>
 </ul>
-<h3 id="表单标签">表单标签</h3>
-<h4 id="input标签">input标签</h4>
+<h3 id="表单标签-1">表单标签</h3>
+<h4 id="1-input标签">1. input标签</h4>
 <p>收集用户信息的表单</p>
 <p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/11.png" alt="image-20220524115435496"></p>
-<h5 id="input-其他属性">input 其他属性</h5>
 <p>文本框下的两个重要属性：</p>
 <p>​		对单选框和多选框，需要指定value用于在后台区分用户的选择。</p>
 <ul>
@@ -341,13 +394,13 @@ span标签：一行可以放多个</code></pre>
 <ul>
 <li><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/2.png" alt="image-20220524122906085"></li>
 </ul>
-<h4 id="button标签">button标签</h4>
+<h4 id="2-button标签">2. button标签</h4>
 <p>放到form下</p>
 <p>双标签，内部可以加显示的值（文本，图片等）</p>
 <ul>
 <li><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/3.png" alt="image-20220524123258555"></li>
 </ul>
-<h4 id="select标签">select标签</h4>
+<h4 id="3-select标签">3. select标签</h4>
 <ul>
 <li>
 <p>select：表示下拉菜单的整体</p>
@@ -380,14 +433,15 @@ span标签：一行可以放多个</code></pre>
 <p>selcted 默认选中 放到option后</p>
 </li>
 </ul>
-<h4 id="textarea文本域标签">textarea文本域标签</h4>
+<h4 id="4-textarea文本域标签">4. textarea文本域标签</h4>
 <p>常见属性：</p>
 <ul>
 <li>cols：制定了文本域的宽度</li>
 <li>rows：指定了文本域的可见行数</li>
 </ul>
-<h4 id="label标签">label标签</h4>
-<p>绑定内容与表单标签的关系：label</p>
+<h4 id="5-label标签">5. label标签</h4>
+<p>绑定内容与表单标签的关系：label。增强用户体验</p>
+<p>关键<!-- raw HTML omitted -->标签的for属性应当与相关元素的id属性相同</p>
 <ul>
 <li>
 <p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/4.png" alt="image-20220524124242576"></p>
@@ -399,7 +453,75 @@ span标签：一行可以放多个</code></pre>
 <p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/6.png" alt="image-20220524124700767"></p>
 </li>
 </ul>
-<h3 id="布局标签">布局标签</h3>
+<div class="highlight">
+    <span class="highlight-type">文本</span>
+    <pre><code class="language-文本 hljs" data-lang="文本">&lt;label for=&#34;text&#34;&gt;用户名:&lt;/label&gt;   
+&lt;input type=&#34;text&#34;  id=&#34;text&#34;&gt; </code></pre>
+</div>
+
+<style>
+    .highlight-type {
+        content: "文本";
+        position: absolute;
+        opacity: 0.5;
+    }
+</style><p>运行效果：</p>
+<p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/202209202212539.png" alt="img"></p>
+<p>当鼠标点击用户名或者方框中的任何位置时，都可以输入信息。</p>
+<h4 id="6-form标签">6. form标签</h4>
+<p><code>&lt;form&gt;</code>标签 表示表单标签，定义整体的表单区域</p>
+<p><strong>示例代码:</strong></p>
+<div class="highlight">
+    <span class="highlight-type">文本</span>
+    <pre><code class="language-文本 hljs" data-lang="文本">&lt;form&gt;
+    &lt;p&gt;
+        &lt;label&gt;姓名：&lt;/label&gt;&lt;input type=&#34;text&#34;&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;密码：&lt;/label&gt;&lt;input type=&#34;password&#34;&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;性别：&lt;/label&gt;
+        &lt;input type=&#34;radio&#34;&gt; 男
+        &lt;input type=&#34;radio&#34;&gt; 女
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;爱好：&lt;/label&gt;
+        &lt;input type=&#34;checkbox&#34;&gt; 唱歌
+        &lt;input type=&#34;checkbox&#34;&gt; 跑步
+        &lt;input type=&#34;checkbox&#34;&gt; 游泳
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;照片：&lt;/label&gt;
+        &lt;input type=&#34;file&#34;&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;个人描述：&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;label&gt;籍贯：&lt;/label&gt;
+        &lt;select&gt;
+            &lt;option&gt;北京&lt;/option&gt;
+            &lt;option&gt;上海&lt;/option&gt;
+            &lt;option&gt;广州&lt;/option&gt;
+            &lt;option&gt;深圳&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input type=&#34;submit&#34; value=&#34;提交&#34;&gt;
+        &lt;input type=&#34;reset&#34; value=&#34;重置&#34;&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+<style>
+    .highlight-type {
+        content: "文本";
+        position: absolute;
+        opacity: 0.5;
+    }
+</style><h3 id="布局标签">布局标签</h3>
 <ul>
 <li>div标签：一行只能放一个（独占一行）</li>
 <li>span标签：一行可以放多个</li>
@@ -453,6 +575,7 @@ span标签：一行可以放多个</code></pre>
         <li><a href="#图形标签">图形标签</a></li>
         <li><a href="#媒体标签">媒体标签</a></li>
         <li><a href="#表格标签">表格标签</a></li>
+        <li><a href="#表单标签">表单标签</a></li>
         <li><a href="#其他标签">其他标签</a></li>
       </ul>
     </li>
@@ -462,7 +585,7 @@ span标签：一行可以放多个</code></pre>
         <li><a href="#媒体标签-1">媒体标签</a></li>
         <li><a href="#链接标签">链接标签</a></li>
         <li><a href="#表格标签-1">表格标签</a></li>
-        <li><a href="#表单标签">表单标签</a></li>
+        <li><a href="#表单标签-1">表单标签</a></li>
         <li><a href="#布局标签">布局标签</a></li>
         <li><a href="#常见的字符实体">常见的字符实体</a></li>
       </ul>

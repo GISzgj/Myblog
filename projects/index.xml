@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Projects on GuanJun</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>http://zgjgis.top/projects/</link>
     <description>Recent content in My Projects on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2022 10:17:19 +0800</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Sep 2022 10:17:19 +0800</lastBuildDate><atom:link href="http://zgjgis.top/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Project</title>
-      <link>http://localhost:1313/projects/project1/</link>
+      <link>http://zgjgis.top/projects/project1/</link>
       <pubDate>Thu, 01 Sep 2022 10:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/projects/project1/</guid>
+      <guid>http://zgjgis.top/projects/project1/</guid>
       <description>待完善</description>
     </item>
     
     <item>
       <title>My Project</title>
-      <link>http://localhost:1313/projects/project2/</link>
+      <link>http://zgjgis.top/projects/project2/</link>
       <pubDate>Thu, 01 Sep 2022 10:17:19 +0800</pubDate>
       
-      <guid>http://localhost:1313/projects/project2/</guid>
+      <guid>http://zgjgis.top/projects/project2/</guid>
       <description>待完善</description>
     </item>
     
