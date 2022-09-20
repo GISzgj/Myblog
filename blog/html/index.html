@@ -85,16 +85,16 @@
     }
 </style>
 <article class="content_post heti heti--ancient">
-    <h2 id="html">HTML</h2>
-<h3 id="概念">概念</h3>
+    <h1 id="html">HTML</h1>
+<h2 id="概念">概念</h2>
 <p>超文本标记语言，可以展示文字，图片和音视频等。主要用于描述一个页面，是页面的骨架。</p>
-<h3 id="操作思想">操作思想</h3>
+<h2 id="操作思想">操作思想</h2>
 <p>标签类似为一个容器，可以将数据放入容器内。页面中的数据，也能通过各种标签的属性值进行简单修饰。</p>
-<h3 id="特点">特点</h3>
+<h2 id="特点">特点</h2>
 <p>语法简单；较为宽松</p>
 <p>标签固定，每个标签都有特定的语义</p>
-<h3 id="常用标签"><strong>常用标签</strong></h3>
-<h4 id="基本标签">基本标签</h4>
+<h2 id="常用标签"><strong>常用标签</strong></h2>
+<h3 id="基本标签">基本标签</h3>
 <div class="highlight">
     <span class="highlight-type"></span>
     <pre><code class="language- hljs" data-lang="">基本标签
@@ -114,7 +114,7 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h4 id="文本标签">文本标签</h4>
+</style><h3 id="文本标签">文本标签</h3>
 <div class="highlight">
     <span class="highlight-type">⽂本</span>
     <pre><code class="language-⽂本 hljs" data-lang="⽂本">&lt;h1&gt;...&lt;/h1&gt;               --标题字⼤⼩（h1~h6）
@@ -140,7 +140,7 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h4 id="图形标签">图形标签</h4>
+</style><h3 id="图形标签">图形标签</h3>
 <div class="highlight">
     <span class="highlight-type">图形</span>
     <pre><code class="language-图形 hljs" data-lang="图形">&lt;img src=’”…”&gt;         --定义图像
@@ -154,7 +154,7 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h4 id="媒体标签">媒体标签</h4>
+</style><h3 id="媒体标签">媒体标签</h3>
 <p><!-- raw HTML omitted --></p>
 <div class="highlight">
     <span class="highlight-type"></span>
@@ -168,7 +168,7 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h4 id="表格标签">表格标签</h4>
+</style><h3 id="表格标签">表格标签</h3>
 <div class="highlight">
     <span class="highlight-type">表格</span>
     <pre><code class="language-表格 hljs" data-lang="表格">&lt;table&gt;…&lt;/table&gt;      --定义表格
@@ -183,7 +183,7 @@
         position: absolute;
         opacity: 0.5;
     }
-</style><h4 id="其他标签">其他标签</h4>
+</style><h3 id="其他标签">其他标签</h3>
 <div class="highlight">
     <span class="highlight-type"></span>
     <pre><code class="language- hljs" data-lang="">&lt;form&gt;…&lt;/form&gt;        --定义供⽤户输⼊的 HTML 表单
@@ -202,18 +202,18 @@ span标签：一行可以放多个</code></pre>
 <hr>
 <hr>
 <hr>
-<h3 id="详解示例"><em>详解示例</em></h3>
-<h4 id="列表标签">列表标签</h4>
+<h2 id="详解示例"><em>详解示例</em></h2>
+<h3 id="列表标签">列表标签</h3>
 <p>代码：</p>
 <!-- raw HTML omitted -->
-<h5 id="无序列表">无序列表</h5>
+<h4 id="无序列表">无序列表</h4>
 <p>不区分顺序的列表</p>
 <ul>
 <li>ul 和 li 组成</li>
 <li>ul：表示的是无序列表的整体，用于包裹li标签（只能包含li标签）</li>
 <li>li： 用于表示无序列表的每一项，用于包含任何内容（任意内容）</li>
 </ul>
-<h5 id="有序列表">有序列表</h5>
+<h4 id="有序列表">有序列表</h4>
 <p>区分顺序的列表</p>
 <ul>
 <li>
@@ -227,21 +227,21 @@ span标签：一行可以放多个</code></pre>
 <p>类似上边无序列表的代码</p>
 </li>
 </ul>
-<h5 id="自定义列表">自定义列表</h5>
+<h4 id="自定义列表">自定义列表</h4>
 <p>在网页底部导航中通常使用自定义标签表示</p>
 <ul>
 <li>dl:表示自定义列表的整体，里面包含dt和dd</li>
 <li>dt:表示自定义列表的主题（标题）（可包含任意内容）</li>
 <li>dd:表示自定义列表中的每一项的说明（可包含任意内容）</li>
 </ul>
-<h4 id="媒体标签-1">媒体标签</h4>
-<h5 id="音频标签">音频标签</h5>
+<h3 id="媒体标签-1">媒体标签</h3>
+<h4 id="音频标签">音频标签</h4>
 <p><code> &lt;audio src=&quot;&quot; &gt;</code></p>
 <ul>
 <li>目前只支持<code>mp3、wav、ogg、flac</code></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/14.png" alt="image-20220523160457592"></p>
-<h5 id="视频标签">视频标签</h5>
+<h4 id="视频标签">视频标签</h4>
 <div class="highlight">
     <span class="highlight-type"></span>
     <pre><code class="language- hljs" data-lang="">&lt;video src=&#34;&#34; controls=&#34;controls&#34;&gt;&lt;/video&gt;</code></pre>
@@ -254,8 +254,8 @@ span标签：一行可以放多个</code></pre>
         opacity: 0.5;
     }
 </style><p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/13.png" alt="image-20220523161244508"></p>
-<h4 id="链接标签">链接标签</h4>
-<h5 id="超链接">超链接</h5>
+<h3 id="链接标签">链接标签</h3>
+<h4 id="超链接">超链接</h4>
 <p><code> &lt;a href=&quot;&quot;&gt;超链接&lt;/a&gt;</code></p>
 <p><code>href</code>属性</p>
 <ul>
@@ -272,7 +272,7 @@ span标签：一行可以放多个</code></pre>
 <li>可以实现回到顶部的功能</li>
 <li>在项目中不确定最终跳转的页面</li>
 </ul>
-<h4 id="表格标签-1">表格标签</h4>
+<h3 id="表格标签-1">表格标签</h3>
 <ul>
 <li>
 <p>table标签：表示表格的整体</p>
@@ -291,7 +291,7 @@ span标签：一行可以放多个</code></pre>
 </li>
 <li>
 <p>嵌套关系 table&gt;tr&gt;td = th</p>
-<h5 id="合并单元格">合并单元格</h5>
+<h4 id="合并单元格">合并单元格</h4>
 <p>单元格合并遵循左上原则</p>
 <ul>
 <li>
@@ -307,11 +307,11 @@ span标签：一行可以放多个</code></pre>
 </ul>
 </li>
 </ul>
-<h4 id="表单标签">表单标签</h4>
-<h5 id="input标签">input标签</h5>
+<h3 id="表单标签">表单标签</h3>
+<h4 id="input标签">input标签</h4>
 <p>收集用户信息的表单</p>
 <p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/11.png" alt="image-20220524115435496"></p>
-<h6 id="input-其他属性">input 其他属性</h6>
+<h5 id="input-其他属性">input 其他属性</h5>
 <p>文本框下的两个重要属性：</p>
 <ul>
 <li><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/12.png" alt="image-20220524125522797"></li>
@@ -340,13 +340,13 @@ span标签：一行可以放多个</code></pre>
 <ul>
 <li><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/2.png" alt="image-20220524122906085"></li>
 </ul>
-<h5 id="button标签">button标签</h5>
+<h4 id="button标签">button标签</h4>
 <p>放到form下</p>
 <p>双标签，内部可以加显示的值（文本，图片等）</p>
 <ul>
 <li><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/3.png" alt="image-20220524123258555"></li>
 </ul>
-<h5 id="select标签">select标签</h5>
+<h4 id="select标签">select标签</h4>
 <ul>
 <li>
 <p>select：表示下拉菜单的整体</p>
@@ -379,13 +379,13 @@ span标签：一行可以放多个</code></pre>
 <p>selcted 默认选中 放到option后</p>
 </li>
 </ul>
-<h5 id="textarea文本域标签">textarea文本域标签</h5>
+<h4 id="textarea文本域标签">textarea文本域标签</h4>
 <p>常见属性：</p>
 <ul>
 <li>cols：制定了文本域的宽度</li>
 <li>rows：指定了文本域的可见行数</li>
 </ul>
-<h5 id="label标签">label标签</h5>
+<h4 id="label标签">label标签</h4>
 <p>绑定内容与表单标签的关系：label</p>
 <ul>
 <li>
@@ -398,7 +398,7 @@ span标签：一行可以放多个</code></pre>
 <p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/6.png" alt="image-20220524124700767"></p>
 </li>
 </ul>
-<h4 id="布局标签">布局标签</h4>
+<h3 id="布局标签">布局标签</h3>
 <ul>
 <li>div标签：一行只能放一个（独占一行）</li>
 <li>span标签：一行可以放多个</li>
@@ -409,7 +409,7 @@ span标签：一行可以放多个</code></pre>
 <li><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/7.png" alt="image-20220524125047896"></li>
 <li><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/8.png" alt="image-20220524125111271"></li>
 </ul>
-<h4 id="常见的字符实体">常见的字符实体</h4>
+<h3 id="常见的字符实体">常见的字符实体</h3>
 <p><img src="https://cdn.jsdelivr.net/gh/GISzgj/PictureHost@master/img/9.png" alt="image-20220524125738522"></p>
 
 </article>
@@ -442,13 +442,28 @@ span标签：一行可以放多个</code></pre>
 <div class="center_main_contents_main">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#html">HTML</a>
+    <li><a href="#概念">概念</a></li>
+    <li><a href="#操作思想">操作思想</a></li>
+    <li><a href="#特点">特点</a></li>
+    <li><a href="#常用标签"><strong>常用标签</strong></a>
       <ul>
-        <li><a href="#概念">概念</a></li>
-        <li><a href="#操作思想">操作思想</a></li>
-        <li><a href="#特点">特点</a></li>
-        <li><a href="#常用标签"><strong>常用标签</strong></a></li>
-        <li><a href="#详解示例"><em>详解示例</em></a></li>
+        <li><a href="#基本标签">基本标签</a></li>
+        <li><a href="#文本标签">文本标签</a></li>
+        <li><a href="#图形标签">图形标签</a></li>
+        <li><a href="#媒体标签">媒体标签</a></li>
+        <li><a href="#表格标签">表格标签</a></li>
+        <li><a href="#其他标签">其他标签</a></li>
+      </ul>
+    </li>
+    <li><a href="#详解示例"><em>详解示例</em></a>
+      <ul>
+        <li><a href="#列表标签">列表标签</a></li>
+        <li><a href="#媒体标签-1">媒体标签</a></li>
+        <li><a href="#链接标签">链接标签</a></li>
+        <li><a href="#表格标签-1">表格标签</a></li>
+        <li><a href="#表单标签">表单标签</a></li>
+        <li><a href="#布局标签">布局标签</a></li>
+        <li><a href="#常见的字符实体">常见的字符实体</a></li>
       </ul>
     </li>
   </ul>
