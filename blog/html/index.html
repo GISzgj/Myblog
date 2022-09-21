@@ -93,6 +93,116 @@
 <h2 id="特点">特点</h2>
 <p>语法简单；较为宽松</p>
 <p>标签固定，每个标签都有特定的语义</p>
+<h2 id="标签分类">标签分类</h2>
+<p><strong>按是否换行分类：</strong></p>
+<ul>
+<li>块级元素：块级元素是值本身属性为display：block的元素</li>
+<li>行内元素：行内元素是指本身属性为display：inline的元素，其宽度随着元素的内容而变化。也叫内联元素。</li>
+</ul>
+<p><strong>块级元素特点：</strong></p>
+<ul>
+<li>每一个块级元素独占一行，从上到下排布</li>
+<li>块级元素可以直接控制宽度高度等盒子模型相关的CSS属性</li>
+<li>不设宽度的情况下，块级元素的宽度是其父级元素内容的宽度</li>
+<li>不设高度的情况下，块级元素的高度是他本身内容的高度</li>
+</ul>
+<p>常用的块级元素：</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>div</td>
+<td>常用块级容器，也是css和layout的主要标签</td>
+</tr>
+<tr>
+<td>h1~h6</td>
+<td>一二三四五六级标题</td>
+</tr>
+<tr>
+<td>hr</td>
+<td>水平分割线</td>
+</tr>
+<tr>
+<td>menu</td>
+<td>菜单列表</td>
+</tr>
+<tr>
+<td>ol、ul 、li</td>
+<td>有序列表、无序列表、列表项</td>
+</tr>
+<tr>
+<td>dl、dt、dd</td>
+<td>自定义列表、定义分类、类项描述</td>
+</tr>
+<tr>
+<td>table</td>
+<td>表格</td>
+</tr>
+<tr>
+<td>p</td>
+<td>段落</td>
+</tr>
+<tr>
+<td>form</td>
+<td>交互表单</td>
+</tr>
+</tbody>
+</table>
+<p><strong>行内元素的特点：</strong></p>
+<ul>
+<li>行内元素会和其他元素从左到右的显示在一行中</li>
+<li>行内元素不能直接控制宽度高度以及盒子模型相关的css属性，可以设置内外边距的水平方向的值。也就是说，对于内联元素的margin和padding，只有margin-left/margin-right和padding-left/padding-right是有效的。垂直方向的margin和padding无效果。</li>
+<li>行内元素的宽高是由其内容本身的大小决定的</li>
+<li>行内元素只能容纳文本或者其他行内元素，不允许在行内元素中嵌套块级元素</li>
+</ul>
+<p><strong>常见的行内元素：</strong></p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>锚点，连接标签</td>
+</tr>
+<tr>
+<td>b</td>
+<td>加粗</td>
+</tr>
+<tr>
+<td>span</td>
+<td>常用的行内标签容器，定义文本内区块</td>
+</tr>
+<tr>
+<td>img</td>
+<td>引入图片</td>
+</tr>
+<tr>
+<td>input</td>
+<td>输入框</td>
+</tr>
+<tr>
+<td>select</td>
+<td>下拉列表</td>
+</tr>
+<tr>
+<td>strong</td>
+<td>加粗强调</td>
+</tr>
+<tr>
+<td>label</td>
+<td>input元素定义标注（标记）</td>
+</tr>
+</tbody>
+</table>
 <h2 id="常用标签"><strong>常用标签</strong></h2>
 <h3 id="基本标签">基本标签</h3>
 <div class="highlight">
@@ -391,8 +501,25 @@ span标签：一行可以放多个</code></pre>
 </li>
 </ol>
 <p>若要实现按钮的功能，需要配合form标签，将input的内容放到form下</p>
+<div class="highlight">
+    <span class="highlight-type">文本</span>
+    <pre><code class="language-文本 hljs" data-lang="文本">&lt;form action=&#34;https://baidu.com/s&#34;&gt;
+        &lt;!-- &lt;input type=&#34;text&#34; name=&#34;word&#34; id=&#34;&#34;&gt; --&gt;
+        &lt;input type=&#34;text&#34; name=&#34;wd&#34; id=&#34;&#34;&gt;
+        &lt;!-- wd 和 word 是百度url搜索所需要的name名，其他的后台无法理解 --&gt;
+        &lt;input type=&#34;submit&#34; value=&#34;百度一下&#34;&gt;
+    &lt;/form&gt;</code></pre>
+</div>
+
+<style>
+    .highlight-type {
+        content: "文本";
+        position: absolute;
+        opacity: 0.5;
+    }
+</style><p>效果：</p>
 <ul>
-<li><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/2.png" alt="image-20220524122906085"></li>
+<li><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/202209211003991.png" alt="百度搜"></li>
 </ul>
 <h4 id="2-button标签">2. button标签</h4>
 <p>放到form下</p>
@@ -438,9 +565,11 @@ span标签：一行可以放多个</code></pre>
 <ul>
 <li>cols：制定了文本域的宽度</li>
 <li>rows：指定了文本域的可见行数</li>
+<li>name: 将数据提交到后台；也可分组；</li>
+<li>value: 可以区分单选框复选框的选中状态;</li>
 </ul>
 <h4 id="5-label标签">5. label标签</h4>
-<p>绑定内容与表单标签的关系：label。增强用户体验</p>
+<p>绑定内容与表单标签的关系：label。增强用户体验，H5新增</p>
 <p>关键<!-- raw HTML omitted -->标签的for属性应当与相关元素的id属性相同</p>
 <ul>
 <li>
@@ -453,6 +582,7 @@ span标签：一行可以放多个</code></pre>
 <p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/img/6.png" alt="image-20220524124700767"></p>
 </li>
 </ul>
+<p>代码：</p>
 <div class="highlight">
     <span class="highlight-type">文本</span>
     <pre><code class="language-文本 hljs" data-lang="文本">&lt;label for=&#34;text&#34;&gt;用户名:&lt;/label&gt;   
@@ -469,8 +599,23 @@ span标签：一行可以放多个</code></pre>
 <p><img src="https://imagesgis.oss-cn-hangzhou.aliyuncs.com/img/202209202212539.png" alt="img"></p>
 <p>当鼠标点击用户名或者方框中的任何位置时，都可以输入信息。</p>
 <h4 id="6-form标签">6. form标签</h4>
-<p><code>&lt;form&gt;</code>标签 表示表单标签，定义整体的表单区域</p>
-<p><strong>示例代码:</strong></p>
+<p><code>&lt;form&gt;</code> 标签</p>
+<div class="highlight">
+    <span class="highlight-type">文本</span>
+    <pre><code class="language-文本 hljs" data-lang="文本">表示表单标签，定义整体的表单区域，表单提交的地址和范围
+action 提交地址
+Method 提交方式
+	get 数据拼接在url后面；
+	post 在请求体中；</code></pre>
+</div>
+
+<style>
+    .highlight-type {
+        content: "文本";
+        position: absolute;
+        opacity: 0.5;
+    }
+</style><p><strong>示例代码:</strong></p>
 <div class="highlight">
     <span class="highlight-type">文本</span>
     <pre><code class="language-文本 hljs" data-lang="文本">&lt;form&gt;
@@ -568,6 +713,7 @@ span标签：一行可以放多个</code></pre>
     <li><a href="#概念">概念</a></li>
     <li><a href="#操作思想">操作思想</a></li>
     <li><a href="#特点">特点</a></li>
+    <li><a href="#标签分类">标签分类</a></li>
     <li><a href="#常用标签"><strong>常用标签</strong></a>
       <ul>
         <li><a href="#基本标签">基本标签</a></li>
