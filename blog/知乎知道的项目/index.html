@@ -7,7 +7,7 @@
     <meta name="referrer" content="no-referrer">
     
 
-    <title>Test blog</title>
+    <title></title>
 
     <link rel="canonical" href="http://zgjgis.top/">
 
@@ -63,10 +63,10 @@
     
 <header class="center_head">
     <h1>
-    Test blog
+    
 </h1>
 <div style="text-align: center;opacity: 0.5;margin-top: 0.5em;">
-    2022.09.01 10:17
+    0001.01.01 00:00
 </div>
 </header>
 
@@ -85,88 +85,56 @@
     }
 </style>
 <article class="content_post heti heti--ancient">
-    <h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<p>fsdf lsdjl <code>jggj</code> fjdggj lk<code>rje</code>rg iergrdg;serigjerogjoiergj oeri;jg er;oi greoigj er; gj;erog erjg oer ger;eorgj er</p>
-<h3 id="code">Code</h3>
-<div class="highlight">
-    <span class="highlight-type">html</span>
-    <pre><code class="language-html hljs" data-lang="html">&lt;!doctype html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;utf-8&#34;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</div>
-
-<style>
-    .highlight-type {
-        content: "html";
-        position: absolute;
-        opacity: 0.5;
-    }
-</style><h3 id="blockquote">Blockquote</h3>
-<blockquote>
-<p>flkdsjfg wp gherog oreig dfngserg oie gdfgnreo ghreog ngkjfdsgeroghg jfdlgfd gfdogeroig fgnreog herognb,bnd;glaergh gnlds;gerter tgndflgnerghowtsd,gmnxbvbnkjdrgheroigbmndfljgnerog regdfgkndfl dfigj erg wgnfgdfnghwoatweggnsdflgjewpgjw epdgnflg egwejpg gnsdgnweoigfngjbdlkgosgpweotsngdfjgn wgjw eg</p>
-</blockquote>
-<h2 id="h2-1">H2</h2>
-<h3 id="table">Table</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ABC</td>
-<td>EDF</td>
-<td>GHI</td>
-</tr>
-<tr>
-<td>123</td>
-<td>456</td>
-<td>789</td>
-</tr>
-</tbody>
-</table>
-<h3 id="list">List</h3>
-<ul>
-<li>fruit
-<ul>
-<li>apple</li>
-<li>banana</li>
-</ul>
-</li>
-<li>meat
-<ul>
-<li>beef</li>
-<li>chicken</li>
-</ul>
-</li>
-</ul>
-<h3 id="math">Math</h3>
-<p>$$
-c = \sqrt{a^{2}+b_{xy}^{2}+e^{x}}
-$$</p>
+    <h2 id="一目标">一、目标</h2>
+<p>先定一个小目标，我们的目标是，在地图页面上加载渲染大量数据，并支持交互（属性和几何数据的增删改查）。</p>
+<p>数据库选用postgresql</p>
+<p>后端引擎geoserver</p>
+<p>后端Python django</p>
+<p>前端openlayer</p>
+<p>制图工具qgis</p>
+<h2 id="二步骤">二、步骤</h2>
+<h3 id="1-geoserver部署与图层发布window">1. geoserver部署与图层发布（window）</h3>
+<p>我们会下载一个跨平台版本的geoserver编译包，这样便于移植到云主机。</p>
+<p>Geoserver部署发布。</p>
+<p>简单配置geoserver的账号密码和读写权限。</p>
+<p>Geoserver发布shp文件。</p>
+<h3 id="2-geoserver部署与图层发布linux">2. geoserver部署与图层发布（Linux）</h3>
+<p>在linux上部署geoserver。</p>
+<p>在linux上安装微软雅黑字体。</p>
+<p>设置geoserver的跨域访问。</p>
+<p>配置geoserver，并发布postgresql图层。</p>
+<h3 id="3qgis配图geoserver风格替换">3.QGIS配图+geoserver风格替换</h3>
+<p>我们会用QGIS简单配置一幅地图（边线、填充、透明度、注记、比例尺）。</p>
+<p>保存制图风格文件sld，把sld文件上传到geoserver，改变瓦片地图样式。</p>
+<h3 id="4-openlayer加载wmts地图">4. openlayer加载wmts地图</h3>
+<p>我们引用openlayer脚本库，加载一幅腾讯地图，并加载之前发布的瓦片地图。</p>
+<h3 id="5-wfs服务增删改查">5. WFS服务增删改查</h3>
+<p>分析查询要素的url。</p>
+<p>查看分析WFS的GML语句，了解geoserver如何对数据进行增删改。</p>
+<h3 id="6openlayer绘制修改选择生成gml">6.openlayer绘制修改选择生成GML</h3>
+<p>前端绘制点、线、面、圆，并生成WKT格式和GML语句。</p>
+<p>分析与后端交互的XML语句（增删改）。</p>
+<h3 id="7python-django转发wms服务">7.Python django转发WMS服务</h3>
+<p>一则所有前端都需要有后台，二则前后端可能会有跨域问题。</p>
+<p>所以需要新建一个Python django工程，转发geoserver发布的WMS服务。</p>
+<h3 id="8openlayer查询与修改要素">8.openlayer查询与修改要素</h3>
+<p>前端调用Python django转发的geoserver发布的WMS服务。</p>
+<p>通过get查询要素。通过post修改要素。</p>
+<h3 id="9要素的裁切和合并后端实现">9.要素的裁切和合并后端实现</h3>
+<p>在springboot工程中引入jts包，实现要素的裁切和合并。</p>
+<h3 id="10要素的裁切和合并前端实现">10.要素的裁切和合并前端实现</h3>
+<p>通过jsts前端脚本库实现要素的裁切与合并。</p>
+<h3 id="11-geoserveropenlayer工程架构">11. geoserver+openlayer工程架构</h3>
+<p>整体的工程架构与说明。</p>
+<h3 id="12腾讯云主机部署工程">12.腾讯云主机部署工程</h3>
 
 </article>
 
 <div class="content_post_button">
     
-    <button onclick="window.location.href = '\/blog\/%E4%B8%B4%E6%97%B6\/%E5%85%89%E8%B0%B7%E6%99%BA%E6%85%A7%E4%BA%A4%E9%80%9A-%E6%8E%A5%E5%8F%A3\/'">
-        <span style="color: var(--primary-color);">上一篇</span><br />
-    </button>
     
-    
-    <button onclick="window.location.href = '\/blog\/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84\/'">
-        <span style="color: var(--primary-color);">下一篇</span><br />绝对路径和相对路径
+    <button onclick="window.location.href = '\/blog\/%E4%B8%B4%E6%97%B6\/%E5%85%89%E8%B0%B7%E6%99%BA%E6%85%A7%E4%BA%A4%E9%80%9A-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90\/'">
+        <span style="color: var(--primary-color);">下一篇</span><br />
     </button>
     
 </div>
@@ -186,18 +154,21 @@ $$</p>
 <div class="center_main_contents_main">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#h2">H2</a>
+    <li><a href="#一目标">一、目标</a></li>
+    <li><a href="#二步骤">二、步骤</a>
       <ul>
-        <li><a href="#h3">H3</a></li>
-        <li><a href="#code">Code</a></li>
-        <li><a href="#blockquote">Blockquote</a></li>
-      </ul>
-    </li>
-    <li><a href="#h2-1">H2</a>
-      <ul>
-        <li><a href="#table">Table</a></li>
-        <li><a href="#list">List</a></li>
-        <li><a href="#math">Math</a></li>
+        <li><a href="#1-geoserver部署与图层发布window">1. geoserver部署与图层发布（window）</a></li>
+        <li><a href="#2-geoserver部署与图层发布linux">2. geoserver部署与图层发布（Linux）</a></li>
+        <li><a href="#3qgis配图geoserver风格替换">3.QGIS配图+geoserver风格替换</a></li>
+        <li><a href="#4-openlayer加载wmts地图">4. openlayer加载wmts地图</a></li>
+        <li><a href="#5-wfs服务增删改查">5. WFS服务增删改查</a></li>
+        <li><a href="#6openlayer绘制修改选择生成gml">6.openlayer绘制修改选择生成GML</a></li>
+        <li><a href="#7python-django转发wms服务">7.Python django转发WMS服务</a></li>
+        <li><a href="#8openlayer查询与修改要素">8.openlayer查询与修改要素</a></li>
+        <li><a href="#9要素的裁切和合并后端实现">9.要素的裁切和合并后端实现</a></li>
+        <li><a href="#10要素的裁切和合并前端实现">10.要素的裁切和合并前端实现</a></li>
+        <li><a href="#11-geoserveropenlayer工程架构">11. geoserver+openlayer工程架构</a></li>
+        <li><a href="#12腾讯云主机部署工程">12.腾讯云主机部署工程</a></li>
       </ul>
     </li>
   </ul>

@@ -7,7 +7,7 @@
     <meta name="referrer" content="no-referrer">
     
 
-    <title>Test blog</title>
+    <title></title>
 
     <link rel="canonical" href="http://zgjgis.top/">
 
@@ -63,10 +63,10 @@
     
 <header class="center_head">
     <h1>
-    Test blog
+    
 </h1>
 <div style="text-align: center;opacity: 0.5;margin-top: 0.5em;">
-    2022.09.01 10:17
+    0001.01.01 00:00
 </div>
 </header>
 
@@ -85,88 +85,95 @@
     }
 </style>
 <article class="content_post heti heti--ancient">
-    <h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<p>fsdf lsdjl <code>jggj</code> fjdggj lk<code>rje</code>rg iergrdg;serigjerogjoiergj oeri;jg er;oi greoigj er; gj;erog erjg oer ger;eorgj er</p>
-<h3 id="code">Code</h3>
-<div class="highlight">
-    <span class="highlight-type">html</span>
-    <pre><code class="language-html hljs" data-lang="html">&lt;!doctype html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;utf-8&#34;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</div>
-
-<style>
-    .highlight-type {
-        content: "html";
-        position: absolute;
-        opacity: 0.5;
-    }
-</style><h3 id="blockquote">Blockquote</h3>
-<blockquote>
-<p>flkdsjfg wp gherog oreig dfngserg oie gdfgnreo ghreog ngkjfdsgeroghg jfdlgfd gfdogeroig fgnreog herognb,bnd;glaergh gnlds;gerter tgndflgnerghowtsd,gmnxbvbnkjdrgheroigbmndfljgnerog regdfgkndfl dfigj erg wgnfgdfnghwoatweggnsdflgjewpgjw epdgnflg egwejpg gnsdgnweoigfngjbdlkgosgpweotsngdfjgn wgjw eg</p>
-</blockquote>
-<h2 id="h2-1">H2</h2>
-<h3 id="table">Table</h3>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ABC</td>
-<td>EDF</td>
-<td>GHI</td>
-</tr>
-<tr>
-<td>123</td>
-<td>456</td>
-<td>789</td>
-</tr>
-</tbody>
-</table>
-<h3 id="list">List</h3>
-<ul>
-<li>fruit
-<ul>
-<li>apple</li>
-<li>banana</li>
-</ul>
-</li>
-<li>meat
-<ul>
-<li>beef</li>
-<li>chicken</li>
-</ul>
-</li>
-</ul>
-<h3 id="math">Math</h3>
-<p>$$
-c = \sqrt{a^{2}+b_{xy}^{2}+e^{x}}
-$$</p>
+    <p>需求点</p>
+<h2 id="1公共模块">1.公共模块</h2>
+<h3 id="1登录">1)登录</h3>
+<p>●系统进入首页时验证用户是否处于登录状态，若没有则跳转至登录页面，用户通过输入账号和密码登录系统</p>
+<p>●用户输入账号与密码，当输入为空时提示用户输入信息，验证输入信息不为空</p>
+<p>●输入正确的账号密码，成功后跳转至首页</p>
+<h3 id="2修改密码">2)修改密码</h3>
+<p>●用户需要修改密码时，进入登录页面，点击“注册”进入注册页，输入账号、旧密码、新密码进行修改</p>
+<p>●用户输入账号、旧密码、新密码，当输入为空时提示用户输入信息，验证输入信息不为空</p>
+<p>●修改成功后显示登录面板</p>
+<h3 id="3显示用户名">3)显示用户名</h3>
+<p>●登录将用户名显示在系统导航栏的右上角</p>
+<h3 id="4退出登录">4)退出登录</h3>
+<p>●用户在登录状态时点击用户名下拉“退出登录”按钮，若成功则跳转至登录页面，若没有成功则继续在系统的首页</p>
+<h3 id="5系统名称">5)系统名称</h3>
+<p>●系统首页的导航栏左侧显示系统名称，本系统名称为“光谷智慧交通系统”</p>
+<h3 id="6实时路况">6)实时路况</h3>
+<p>●点击“实时路况”按钮获取当前路况信息数据</p>
+<h3 id="7查询">7)查询</h3>
+<p>●输入事件类型关键字如碰撞，失火等，点击查询按钮，相关事件的点将会被标记</p>
+<p>●点击任意相关事件点，获取详细事件信息</p>
+<h3 id="8工具箱">8)工具箱</h3>
+<p>●点击测量距离，即可点击任意两个以上的点，连成线，测量该线的距离</p>
+<p>●点击测量面积，即可点击任意三个以上的点绘制多边形，测量多边形的面积</p>
+<p>●点击关闭测量，即可结束测量</p>
+<p>●点击导出图片，即可将当前地图作为一张图片下载</p>
+<h3 id="9底图">9)底图</h3>
+<p>●将天地图矢量、矢量注记、影像、影像注记图层作为地图的底图</p>
+<p>●矢量、矢量注记图层组成为一个图层组</p>
+<p>●影像与影像注记图层组成为一个图层组</p>
+<h3 id="10控件">10)控件</h3>
+<p>●放大缩小控件</p>
+<p>●复位控件</p>
+<p>●鼠标位置控件</p>
+<p>●比例尺控件</p>
+<h3 id="11事件图层">11)事件图层</h3>
+<p>●光谷智慧交通地图文档，居民区、武汉光谷道路、摄像头、事件四个图层</p>
+<h3 id="12底图切换">12)底图切换</h3>
+<p>●通过右下角的底图切换工具，对地图中的矢量底图与影像底图进行切换</p>
+<h2 id="2普通用户">2.普通用户</h2>
+<h3 id="1注册">1)注册</h3>
+<p>●普通用户需要先注册账号</p>
+<p>●在登录界面点击注册，即可注册账号</p>
+<h2 id="2报告路况">2)报告路况</h2>
+<p>●普通用户点击报告路况，即可上报看到的事故</p>
+<p>●上报的路况会在路况信息显</p>
+<h2 id="3查看公告">3)查看公告</h2>
+<p>●普通用户点击查看公告可以看到发布最新公告信息</p>
+<h2 id="3交通部门">3.交通部门</h2>
+<h3 id="1左侧目录树">1)左侧目录树</h3>
+<p>●通过地图文档获取地图目录，使用地图目录获取图层目录</p>
+<h3 id="2视频监控">2)视频监控</h3>
+<p>●点击摄像头，弹窗位置信息以及视频监控</p>
+<h3 id="3事件添加">3)事件添加</h3>
+<p>●点击事件添加，弹窗添加事件信息</p>
+<h3 id="4事件查询">4)事件查询</h3>
+<p>●点击事件查询，指定范围选定范围所有的事件</p>
+<p>●生成热力图和事件统计图</p>
+<h3 id="5事件更新">5)事件更新</h3>
+<p>●点击事件更新，弹窗更新时间状态</p>
+<h3 id="6发布公告">6)发布公告</h3>
+<p>●点击发布公告，绘制线要素，划定范围，生成缓冲区分析</p>
+<p>●添加发布公告信息</p>
+<h3 id="7路况信息">7)路况信息</h3>
+<p>●点击路况信息，获取普通用户报告的路况信息</p>
+<p>●进行审核，如果通过，事件添加会自动填充表单内容</p>
+<h2 id="4管理员用户管理">4.管理员（用户管理）</h2>
+<h3 id="1用户信息表">1)用户信息表</h3>
+<p>●点击用户管理，弹出用户信息表</p>
+<h3 id="2新增">2)新增</h3>
+<p>●打开用户管理，点击“新增”按钮，添加一个账号</p>
+<h3 id="3修改">3)修改</h3>
+<p>●管理员可以对普通用户和交通部门的账号用户名与密码进行修改</p>
+<h3 id="4删除">4)删除</h3>
+<p>●管理员可以删除系统中无效或违规的账号，点击删除几个删除用户</p>
+<h3 id="5下线">5)下线</h3>
+<p>●点击下线即可修改用户登录状态</p>
 
 </article>
 
 <div class="content_post_button">
     
-    <button onclick="window.location.href = '\/blog\/%E4%B8%B4%E6%97%B6\/%E5%85%89%E8%B0%B7%E6%99%BA%E6%85%A7%E4%BA%A4%E9%80%9A-%E6%8E%A5%E5%8F%A3\/'">
+    <button onclick="window.location.href = '\/blog\/%E7%9F%A5%E4%B9%8E%E7%9F%A5%E9%81%93%E7%9A%84%E9%A1%B9%E7%9B%AE\/'">
         <span style="color: var(--primary-color);">上一篇</span><br />
     </button>
     
     
-    <button onclick="window.location.href = '\/blog\/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84\/'">
-        <span style="color: var(--primary-color);">下一篇</span><br />绝对路径和相对路径
+    <button onclick="window.location.href = '\/blog\/%E4%B8%B4%E6%97%B6\/%E5%85%89%E8%B0%B7%E6%99%BA%E6%85%A7%E4%BA%A4%E9%80%9A-%E6%8E%A5%E5%8F%A3\/'">
+        <span style="color: var(--primary-color);">下一篇</span><br />
     </button>
     
 </div>
@@ -186,18 +193,47 @@ $$</p>
 <div class="center_main_contents_main">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#h2">H2</a>
+    <li><a href="#1公共模块">1.公共模块</a>
       <ul>
-        <li><a href="#h3">H3</a></li>
-        <li><a href="#code">Code</a></li>
-        <li><a href="#blockquote">Blockquote</a></li>
+        <li><a href="#1登录">1)登录</a></li>
+        <li><a href="#2修改密码">2)修改密码</a></li>
+        <li><a href="#3显示用户名">3)显示用户名</a></li>
+        <li><a href="#4退出登录">4)退出登录</a></li>
+        <li><a href="#5系统名称">5)系统名称</a></li>
+        <li><a href="#6实时路况">6)实时路况</a></li>
+        <li><a href="#7查询">7)查询</a></li>
+        <li><a href="#8工具箱">8)工具箱</a></li>
+        <li><a href="#9底图">9)底图</a></li>
+        <li><a href="#10控件">10)控件</a></li>
+        <li><a href="#11事件图层">11)事件图层</a></li>
+        <li><a href="#12底图切换">12)底图切换</a></li>
       </ul>
     </li>
-    <li><a href="#h2-1">H2</a>
+    <li><a href="#2普通用户">2.普通用户</a>
       <ul>
-        <li><a href="#table">Table</a></li>
-        <li><a href="#list">List</a></li>
-        <li><a href="#math">Math</a></li>
+        <li><a href="#1注册">1)注册</a></li>
+      </ul>
+    </li>
+    <li><a href="#2报告路况">2)报告路况</a></li>
+    <li><a href="#3查看公告">3)查看公告</a></li>
+    <li><a href="#3交通部门">3.交通部门</a>
+      <ul>
+        <li><a href="#1左侧目录树">1)左侧目录树</a></li>
+        <li><a href="#2视频监控">2)视频监控</a></li>
+        <li><a href="#3事件添加">3)事件添加</a></li>
+        <li><a href="#4事件查询">4)事件查询</a></li>
+        <li><a href="#5事件更新">5)事件更新</a></li>
+        <li><a href="#6发布公告">6)发布公告</a></li>
+        <li><a href="#7路况信息">7)路况信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#4管理员用户管理">4.管理员（用户管理）</a>
+      <ul>
+        <li><a href="#1用户信息表">1)用户信息表</a></li>
+        <li><a href="#2新增">2)新增</a></li>
+        <li><a href="#3修改">3)修改</a></li>
+        <li><a href="#4删除">4)删除</a></li>
+        <li><a href="#5下线">5)下线</a></li>
       </ul>
     </li>
   </ul>
