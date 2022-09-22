@@ -6,16 +6,7 @@
     <description>Recent content on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 16:13:57 +0800</lastBuildDate><atom:link href="http://zgjgis.top/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Readme</title>
-      <link>http://zgjgis.top/blog/readme/</link>
-      <pubDate>Tue, 20 Sep 2022 16:13:57 +0800</pubDate>
-      
-      <guid>http://zgjgis.top/blog/readme/</guid>
-      <description>望周知 因为是以Github为图床。cdn加速服务不够稳定，因此有时不能显示图片。当然如果使用加v速p服n务，能够正常显示。 造成不便，请见谅！</description>
-    </item>
-    
+    <lastBuildDate>Tue, 20 Sep 2022 11:13:57 +0800</lastBuildDate><atom:link href="http://zgjgis.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于基于ArcGis的地图发布</title>
       <link>http://zgjgis.top/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</link>
@@ -62,15 +53,6 @@
     </item>
     
     <item>
-      <title>测试</title>
-      <link>http://zgjgis.top/life/note3/</link>
-      <pubDate>Sun, 18 Sep 2022 16:59:45 +0800</pubDate>
-      
-      <guid>http://zgjgis.top/life/note3/</guid>
-      <description>待完善</description>
-    </item>
-    
-    <item>
       <title>绝对路径和相对路径</title>
       <link>http://zgjgis.top/blog/%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Sun, 18 Sep 2022 16:06:21 +0800</pubDate>
@@ -85,7 +67,7 @@
       <pubDate>Fri, 02 Sep 2022 10:22:14 +0800</pubDate>
       
       <guid>http://zgjgis.top/life/note2/</guid>
-      <description>life 待完善</description>
+      <description>鱼香肉丝介绍 鱼香肉丝（Yuxiang shredded pork），是四川的一道特色名菜，该菜品以泡辣椒、子姜、大蒜、糖和醋炒制猪里脊肉丝而成，由民国时期的一</description>
     </item>
     
     <item>
@@ -94,7 +76,7 @@
       <pubDate>Thu, 01 Sep 2022 10:21:27 +0800</pubDate>
       
       <guid>http://zgjgis.top/life/note1/</guid>
-      <description>life 待完善</description>
+      <description>宫保鸡丁介绍 宫保鸡丁（Kung Pao Chicken），是一道闻名中外的特色传统名菜，在鲁菜、川菜、贵州菜中都有收录，其原料、做法有差别。该菜式的</description>
     </item>
     
     <item>
@@ -132,7 +114,7 @@ H2 Table ABC EDF GHI 123 456 789 List fruit apple banana meat beef chicken Math 
       <pubDate>Thu, 11 Aug 2022 10:24:26 +0800</pubDate>
       
       <guid>http://zgjgis.top/about/</guid>
-      <description>教育背景 本科：武汉科技大学 项目介绍 待完善 掌握技能 待完善</description>
+      <description>教育背景 本科：武汉科技大学&amp;ndash;[湖北武汉一本院校] 专业：地理信息科学 掌握技能 Web开发 熟练掌握 HTML、CSS 的页面布局，能根据设</description>
     </item>
     
   </channel>

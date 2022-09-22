@@ -6,16 +6,7 @@
     <description>Recent content in My Blog on GuanJun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 16:13:57 +0800</lastBuildDate><atom:link href="http://zgjgis.top/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Readme</title>
-      <link>http://zgjgis.top/blog/readme/</link>
-      <pubDate>Tue, 20 Sep 2022 16:13:57 +0800</pubDate>
-      
-      <guid>http://zgjgis.top/blog/readme/</guid>
-      <description>望周知 因为是以Github为图床。cdn加速服务不够稳定，因此有时不能显示图片。当然如果使用加v速p服n务，能够正常显示。 造成不便，请见谅！</description>
-    </item>
-    
+    <lastBuildDate>Tue, 20 Sep 2022 11:13:57 +0800</lastBuildDate><atom:link href="http://zgjgis.top/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于基于ArcGis的地图发布</title>
       <link>http://zgjgis.top/blog/%E5%9F%BA%E4%BA%8E%E5%9F%BA%E4%BA%8Earcgis%E7%9A%84%E5%9C%B0%E5%9B%BE%E5%8F%91%E5%B8%83/</link>
